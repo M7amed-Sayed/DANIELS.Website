@@ -1,0 +1,356 @@
+/* global style*/
+:root{
+    --mainColor:#e65f78;
+    scroll-padding-top: 60px;
+}
+a{
+    text-decoration: none;
+    color: #111;
+}
+
+body{
+    font-family: 'Nunito Sans', sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Montserrat', sans-serif;
+}
+.btn-white {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: transparent;
+    --bs-btn-border-color: #fff;
+    --bs-btn-hover-color: #111;
+    --bs-btn-hover-bg: #fff;
+    --bs-btn-hover-border-color: #fff;
+   
+}
+.btn-pink{
+    --bs-btn-color: #fff;
+    --bs-btn-bg: var(--mainColor);
+    --bs-btn-border-color: var(var(--mainColor));
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #8a3847;
+    --bs-btn-hover-border-color: #8a3847;
+}
+.text-pink{
+    color:var(--mainColor)
+}
+.w-fitContent{
+    width: fit-content;
+}
+/* fixed icons */
+.setting{
+    position: fixed;
+    top: 30%;
+    left: 0;
+    z-index: 99;
+    background-color: #2b2424;
+    color: #fff;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 0 5px 5px 0;
+    -webkit-border-radius: 0 5px 5px 0;
+    -moz-border-radius: 0 5px 5px 0;
+    -ms-border-radius: 0 5px 5px 0;
+    -o-border-radius: 0 5px 5px 0;
+}
+.up-home{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: var(--mainColor);
+    width: 30px;
+    height: 30px;
+    
+}
+/* navbar */
+nav  .nav-link{
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+}
+nav li:hover .nav-link{
+    color: rgb(0, 0, 0) !important;
+    font-weight: 200;
+}
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: black;
+    font-weight: 700;
+}
+/* home */
+header {
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.3)) ,url(../imgs/bg.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+header .main-title{
+    font-size: 60px;
+    font-weight: 500;
+}
+header .p-header,.p-title{
+    color: rgba(255,255,255,0.7);
+    max-width: 500px;
+    margin: auto;
+}
+
+@keyframes bounc {
+    0%{bottom: 10px;}
+    30%{bottom: 30px;}
+    50%{bottom: 10px;}
+    60%{bottom: 15px;}
+    100%{bottom: 10px;}
+}
+.header ul li a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border: 1px solid rgba(0, 0, 0,0.2) ;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    color: #fff;
+    background-color: rgba(0, 0, 0,0.6);
+}
+
+/* about */
+.about ul li a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #d4d4d4;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    -o-transition: 0.5s all;
+}
+.about ul li a:hover{
+    border-color: var(--mainColor);
+    color: #e65f78;
+}
+
+.about .about_imag:after {
+    content: "";
+    width: 30%;
+    height: 60%;
+    position: absolute;
+    left: 160px;
+    bottom: -700px;
+    background-image: url(../imgs/dots.png);
+    background-repeat: repeat;
+    z-index: -1;
+}
+.about .but .one{
+    background-color: #000000;
+    color: #fff;
+    border-color: #fff;
+}
+.about .but .one:hover{
+    background-color: white;
+    color: #000000;
+    border-color: #000000;
+    transition: 1s;
+
+}
+.about .but .two{
+    background-color: #fff;
+    color: #000000;
+    border-color: #000000;
+}
+.about .but .two:hover{
+    background-color: #000000;
+    color: #fff;
+    border-color: #fff;
+    transition: 1s;
+
+}
+
+/* Services */
+.Services ul li a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    color:#111;
+    background-color:rgba(0, 0, 0, 0.1);
+}
+.Services ul li a:hover{
+    border-color: #fff;
+    background-color: #111;
+    color: #fff ;
+}
+/* portfolio */
+.nav-pills .nav-link.active{
+    background-color: #fff !important;
+}
+.portfolio .nav-link{
+color: #111
+}
+.portfolio .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: black;
+    font-weight: bold;
+    background-color: #fff          ;
+    border-radius: 30px;
+    padding-inline: 20px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+.portfolio .inner{
+    cursor: pointer;
+}
+.portfolio .content{
+    top: 150%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    z-index: 99;
+}
+.portfolio .inner:hover .content{
+ top: 50%;
+}
+.portfolio ul li a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border: 1px solid rgb(0, 0, 0) ;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    color: #fff;
+    background-color: rgba(0, 0, 0);
+}
+.portfolio ul li a:hover{
+    border-color: #111;
+    background-color: #fff;
+    color: #111 ;
+}
+.portfolio .layer{
+    position: absolute;
+    top: 10px;
+    bottom: 10px;
+    right: 20px;  
+
+    margin: auto;
+    padding: 5px;
+    width: 90%;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 1px solid rgba(0, 0, 0,0.3);
+    opacity: 0;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    -o-transition: 0.5s all;
+}
+.portfolio .inner:hover .layer{
+    opacity: 1;
+}
+/* client */
+.p-Services{
+    max-width: 700px;
+    margin: auto;
+    font-style: italic;
+}
+.carousel-indicators [data-bs-target] {
+    all:unset;
+    width: 15px;
+    opacity: 0.7;
+    height: 5px;
+    background-color: gray  ;
+    margin-inline:2px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    cursor: pointer;
+}
+.carousel-indicators .active {
+    opacity: 1;
+    width: 20px;
+}
+/* contact */
+.contact ul li a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    color:#111;
+    background-color:rgba(0, 0, 0, 0.1);
+}
+.contact ul li a:hover{
+    border-color: #fff;
+    background-color: #111;
+    color: #fff ;
+}
+.contact form button
+{
+    background-color: #111;
+    color: #fff;
+}
+.contact form button:hover{
+    background-color: #fff;
+    border-color:#111 ;
+    color: #111;
+    transition: 1s;
+
+}
